@@ -32,7 +32,7 @@ class Hub extends React.Component<{}, IHubState> {
     return (
       <Page className="flex-grow">
         <Header
-          title="Hello Hub!"
+          title="Hello Hub from Lila!"
           commandBarItems={[
             {
               id: "panel-button",

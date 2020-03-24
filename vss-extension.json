@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "Hot Reload and Debug",
   "description": "Use hot reload and debug directly in VS Code",
-  "publisher": "microsoft",
+  "publisher": "litra",
   "demands": ["api-version/3.0"],
   "categories": ["Azure Repos"],
   "targets": [

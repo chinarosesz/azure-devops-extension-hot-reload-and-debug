@@ -2,5 +2,5 @@
   "id": "hot-reload-and-debug-dev",
   "name": "HelloWorldDev",
   "public": false,
-  "baseUri": "https://localhost:3000"
+  "baseUri": "https://localhost:4000"
 }

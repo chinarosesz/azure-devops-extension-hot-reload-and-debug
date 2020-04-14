@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Hot Reload and Debug",
   "description": "Use hot reload and debug directly in VS Code",
   "publisher": "litra",

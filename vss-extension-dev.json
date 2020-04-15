@@ -1,6 +1,6 @@
 {
-  "id": "hot-reload-and-debug-dev",
-  "name": "HelloWorldDev",
+  "id": "helloworld-dev",
+  "name": "HelloWorld-Dev",
   "public": false,
   "baseUri": "https://localhost:4000"
 }

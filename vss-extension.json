@@ -1,11 +1,13 @@
 {
+  "id": "helloworld",
+  "public": false,
   "manifestVersion": 1,
-  "version": "1.0.1",
-  "name": "Hot Reload and Debug",
-  "description": "Use hot reload and debug directly in VS Code",
+  "version": "1.0.9",
+  "name": "HelloWorld",
+  "description": "HelloWorld ADO Extension example with hot reload",
   "publisher": "litra",
-  "demands": ["api-version/3.0"],
-  "categories": ["Azure Repos"],
+  "demands": [ "api-version/3.0" ],
+  "categories": [ "Azure Repos" ],
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
@@ -34,9 +36,9 @@
       "id": "hello-world-hub-group",
       "type": "ms.vss-web.hub-group",
       "description": "Sample hub group",
-      "targets": ["ms.vss-web.project-hub-groups-collection"],
+      "targets": [ "ms.vss-web.project-hub-groups-collection" ],
       "properties": {
-        "name": "Hello World!",
+        "name": "Hello World",
         "icon": {
           "dark": "img/world.png",
           "light": "img/world.png"
@@ -46,7 +48,7 @@
     {
       "id": "default-hub",
       "type": "ms.vss-web.hub",
-      "targets": [".hello-world-hub-group"],
+      "targets": [ ".hello-world-hub-group" ],
       "properties": {
         "uri": "dist/hub/hub.html"
       }

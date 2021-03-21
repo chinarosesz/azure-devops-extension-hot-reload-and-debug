@@ -57,7 +57,7 @@ export class MsalComponent extends React.Component
         this.msalApp.acquireTokenSilent(authenticationParameters)
             .then(response =>
             {
-                console.log('Acquired token successfully. The accessToken:' + response.accessToken + '\r\n' + 'The idToken: ' + response.idToken.rawIdToken);
+                console.log('Acquired token successfully with current logged in user ' + authenticationParameters.loginHint + '. The accessToken:' + response.accessToken + '\r\n' + 'The idToken: ' + response.idToken.rawIdToken);
             })
             .catch(error => 
             {

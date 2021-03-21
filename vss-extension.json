@@ -2,7 +2,7 @@
   "id": "helloworld",
   "public": false,
   "manifestVersion": 1,
-  "version": "1.0.9",
+  "version": "1.1.0",
   "name": "HelloWorld",
   "description": "HelloWorld ADO Extension example with hot reload",
   "publisher": "litra",
@@ -50,7 +50,7 @@
       "type": "ms.vss-web.hub",
       "targets": [ ".hello-world-hub-group" ],
       "properties": {
-        "uri": "dist/hub/hub.html"
+        "uri": "dist/index.html"
       }
     }
   ]

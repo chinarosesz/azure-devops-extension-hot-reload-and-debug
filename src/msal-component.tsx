@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as Msal from 'msal';
-import * as AzureDevOpsExtensionSdk from 'azure-devops-extension-sdk';
+import * as VSS from 'azure-devops-extension-sdk';
 
 // Msal uses v2 oauth endpoint. Here are some tips on how to configure AAD app and webapp/functionapp
 // - When configuring AAD app, set accessTokenAcceptedVersion to 2 in manifest
@@ -51,7 +51,7 @@ export class MsalComponent extends React.Component
         let authenticationParameters: Msal.AuthenticationParameters = 
         {
             scopes: ['user.read'],
-            loginHint: AzureDevOpsExtensionSdk.getUser().name
+            loginHint: VSS.getUser().name
         }
 
         this.msalApp.acquireTokenSilent(authenticationParameters)
@@ -61,7 +61,7 @@ export class MsalComponent extends React.Component
             })
             .catch(error => 
             {
-                console.log('Failed to acquire token it could be because user is not logged in: ' + error);
+                console.log('Failed to acquire token for ' + authenticationParameters.loginHint + ' it could be because user is not logged in: ' + error);
             }
         )
     }

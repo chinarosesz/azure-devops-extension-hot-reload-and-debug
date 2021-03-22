@@ -10,14 +10,16 @@ module.exports =
     filename: "main.js",
     clean: true
   },
+  devtool: "inline-source-map",
   devServer: 
   {
     https: true,
-    port: 4000
+    port: 4000,
+    publicPath: "/dist/"
   },
   resolve: 
   {
-    extensions: [".tsx", ".js"],
+    extensions: [".tsx", ".ts", ".js"]
   },
   module: 
   {
@@ -34,7 +36,7 @@ module.exports =
       },
       {
         test: /\.(scss|css)$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ["style-loader", "css-loader", "sass-loader", "azure-devops-ui/buildScripts/css-variables-loader"]
       }
     ]
   },

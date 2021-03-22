@@ -6,7 +6,7 @@ export class ClockComponent extends React.Component
   {
     return (
       <div>
-        <h1>The time here is now {this.getDate(true)}</h1>
+        <h1>The time here is NOW {this.getDate(true)}</h1>
         <h1>The time in UTC is {this.getDate(false)}</h1>
       </div>
     );

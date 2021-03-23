@@ -1,10 +1,10 @@
 {
-  "id": "hello-world",
+  "id": "sample",
+  "name": "sample",
   "public": false,
   "manifestVersion": 1,
-  "version": "1.1.0",
-  "name": "hello-world",
-  "description": "HelloWorld ADO Extension example with hot reload",
+  "version": "1.0.0",
+  "description": "Sample Azure DevOps extension with hot reload",
   "publisher": "litra",
   "demands": [ "api-version/3.0" ],
   "categories": [ "Azure Repos" ],
@@ -33,12 +33,12 @@
   ],
   "contributions": [
     {
-      "id": "hello-world-hub-group",
+      "id": "sample-hub-group",
       "type": "ms.vss-web.hub-group",
       "description": "Sample hub group",
       "targets": [ "ms.vss-web.project-hub-groups-collection" ],
       "properties": {
-        "name": "Hello World",
+        "name": "Sample",
         "icon": {
           "dark": "img/world.png",
           "light": "img/world.png"
@@ -48,9 +48,9 @@
     {
       "id": "default-hub",
       "type": "ms.vss-web.hub",
-      "targets": [ ".hello-world-hub-group" ],
+      "targets": [ ".sample-hub-group" ],
       "properties": {
-        "uri": "dist/index.html"
+        "uri": "dist/main.html"
       }
     }
   ]

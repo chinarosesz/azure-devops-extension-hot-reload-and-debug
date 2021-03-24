@@ -1,6 +1,7 @@
 {
   "author": "litra",
   "license": "MIT",
+  "description": "Azure DevOps Example with hot reload",
   "repository": {
     "type": "git"
   },
@@ -11,7 +12,6 @@
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
   },
-  "description": "Azure DevOps Example with hot reload",
   "devDependencies": {
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",

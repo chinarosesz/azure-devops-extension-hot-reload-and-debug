@@ -8,14 +8,14 @@ module.exports =
   output: 
   {
     filename: "main.js",
-    clean: true
+    clean: true,
+    publicPath: "/dist/"
   },
   devtool: "inline-source-map",
   devServer: 
   {
     https: true,
     port: 4000,
-    publicPath: "/dist/"
   },
   resolve: 
   {
@@ -27,8 +27,7 @@ module.exports =
     [
       {
         test: /\.tsx?$/,
-        use: "ts-loader",
-        exclude: /node_modules/,
+        use: "ts-loader"
       },
       {
         test: /\.woff$/,
@@ -45,7 +44,7 @@ module.exports =
     new HtmlWebpackPlugin(
       {
           template: Path.resolve(__dirname, "./src/main.html"),
-          filename: "index.html"
+          filename: "main.html"
       })
   ]
 };

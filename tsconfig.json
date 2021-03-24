@@ -14,5 +14,5 @@
     "lib": ["es6", "dom"],
     "types": ["react"]
   },
-  "exclude": ["node_modules", "typings"]
+  "exclude": ["node_modules"]
 }

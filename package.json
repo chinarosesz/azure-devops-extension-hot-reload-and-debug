@@ -9,8 +9,8 @@
     "azure-devops-extension-sdk": "^2.0.11",
     "azure-devops-ui": "^2.167.1",
     "msal": "^1.4.8",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.3",

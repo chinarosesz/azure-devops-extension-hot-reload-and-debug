@@ -50,7 +50,7 @@
       "type": "ms.vss-web.hub",
       "targets": [ ".hello-world-hub-group" ],
       "properties": {
-        "uri": "dist/index.html"
+        "uri": "dist/main.html"
       }
     }
   ]
